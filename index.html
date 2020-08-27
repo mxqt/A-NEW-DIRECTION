@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- title -->
+<title> A New Direction </title>
+<meta name="description" content="Boring Parent Arugment (BPA) Free providing the good shit.">
+<!-- mobile -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+<!-- favicon -->
+<link rel="shortcut icon" href="assets/favicon.png"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- css -->
+<link rel="stylesheet" type=text/css href="main.css"/>
+<link rel="stylesheet" type="text/css" href="normalize.css"/>
+<link rel="stylesheet" type="text/css" href="media_queries.css"/>
+</head>
+<body>
+
+<section class="container">
+<section class="left">
+<div class="logo">
+<h1>AND</h1>
+<div class="logo-sub">
+<h3>A NEW DIRECTION</h3></div>
+</div>
+<div class="this">
+  <h3>This exploration aims to stimulate a collaborative discussion about the reality that we find ourselves in to make a proposition for the future.</h3>
+  </div>
+<div class="sub">
+<h3>OPEN FOR DISCUSSION IN<div id="countdown"></div></h3></div>
+</section>
+      
+<section class="right">
+    
+    <div class="slice">
+        <h2>Ekore e tika kia noho he Maori rawakore ki tenei whenua; ehara tenei i te mea e ora ai tatou e tika ai ranei ratou. E mea ana tatou kia noho te Maori i runga i te rangimarie penei me tatou, a e ki ana ahau mehemea tera tetahi iwi i whiwhi nui ki te whenua kua kite ratou kei to mawehe atu o ratou whenua i a ratou, e tika ana ano kia pouri ratou. 
+          <br><br>
+        Ko te utu mo te Waka, Maori i te tau ka te 10s., he mea utu ki mua. Ka tukuna atu i te meera ki te tangata e hiahia ana me ka tukua mai e ia aua moni ki te Kai Tuhi ki Poneke nei. Kua tonoa te Paremete e te Kawana kia hui mai i te 2 o nga haora o te awatea o te Taitei, te 15 o Hune, ki te mahi i nga mahi o te motu.
+          <br><br>
+        Ta ratou kupu i reira ko te whenua kia whakawakia kia hokona, kia watea ratou i nga raruraru e homai ana e etahi iwi ki a ratou. He nui rapea nga korero mo nga rori, mo nga ruritanga hoki, mo te aha atu; otira ko te tino kupu tena, ko te whakawa, ko te hoko. 
+          <br><br>
+        E ngari me tino mohio ano te Muera ma ki nga ture he mea ia i hangaia hei painga hei oranga mo te katoa. Heoi te tikanga pai mo ratou, mo te Muera ma, ara " ko ta ratou e pai ana kia meatia mai e te tangata ki a ratou, koia ano tena ka meatia e ratou ki te tangata," a hei reira kitea ai e hara te ture i te mea whakamate i a ratou, engari he mea hapai he mea whakaora i a ratou i runga i te ara pera me nga tikanga pera.   
+        </h2>
+        </div>
+
+</section>
+</section>
+</body>
+
+<script>
+
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep,4,2020 17:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "NOW";
+    }
+}, 1000);
+</script>  
+
+</html>

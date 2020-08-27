@@ -1,0 +1,45 @@
+@media screen and (min-width: 0px) and (max-width: 856px) {
+
+
+.page-heading{
+position: static;
+padding: 2vw;
+padding-bottom: 10vw;
+width: 90%;
+    }
+    
+.logo{
+position: static;
+padding: 2vw;
+width: 90%;
+    }
+    
+    
+.info-container{
+width: 100%;
+margin-left: 2vw;
+float: left;
+}
+
+.countdown{
+position: static;
+padding-top: 5vh;
+margin: 4vw;
+width: 100%;
+}
+    
+#info{
+margin-top: 0vh;
+margin-left: 2vw;
+}
+    
+
+h3{
+font-size: 1.5em;
+}
+
+h2{
+font-size: 1..5em;
+}
+
+}
